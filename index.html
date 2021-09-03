@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JsAlarm.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="house">
+         <!-- (0) LIVE TIME -->
+<div id="ctime">
+    <h1 class="header">ALARM</h1>
+    <div class="square">
+      <div class="digits" id="chr">00</div>
+      <div class="text">HR</div>
+    </div>
+    <div class="square">
+      <div class="digits" id="cmin">00</div>
+      <div class="text">MIN</div>
+    </div>
+    <div class="square">
+      <div class="digits" id="csec">00</div>
+      <div class="text">SEC</div>
+    </div>
+  </div>
+  
+  <!-- (1) Activate alarm ALARM -->
+   <div id="tpick">
+    <div id="tpick-h"> Set Hour</div>
+    <div id="tpick-m">Set Time</div>
+    <div id="tpick-s">Set secs</div>
+    <div>
+      <input type="button" value="Set" id="tset"/>
+      <input type="button" value="Reset" id="treset" disabled/>
+    </div>
+  </div> 
+  
+  <!-- (2) ALARM SONG -->
+   <audio id="alarm-sound" loop>
+    <source src="ALARM SOUND EFFECT.mp3" type="audio/mp3">
+  </audio>
+    </div>
+
+  <script src="JsAlarm.js"></script>
+</body>
+</html>
