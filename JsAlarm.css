@@ -11,7 +11,7 @@ body{
     text-align: center;
 }
 .house{
-    border-radius: 2.2rem;
+    border-radius: 2rem;
     padding: 0 2rem;
     align-items: center;
     padding: 0 1rem;
@@ -21,20 +21,40 @@ body{
     position: relative;
 }
 
-
+i{
+    animation: bima 2s ease-in-out infinite normal;
+}
+@keyframes bima {
+    0%{
+        transform: scale(0.9);
+    }
+    20%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
 h1{
     text-align: center;
     border-radius: 1.5rem;
    
 }
+
 #ctime{
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 1rem 2rem ;
     height: fit-content;
     align-items: center  ;
     justify-content: center;
     text-align: center;
-   
+    font-size: 1.5rem;
    
 }
 .square{
@@ -42,8 +62,10 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 5px 5px;
-    border-radius: 1.5rem;
    
+}
+.digits{
+    padding: .2rem .5rem;
 }
 select{
     font-size: 1.5rem;
@@ -62,4 +84,19 @@ select:focus{
     margin: .5rem .5rem;
     background: #dde1e7;
     box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 288);
+}
+
+@media only screen and (max-width:1024px) and (min-width:320px){
+    h1{
+        font-size: 1.2rem;
+    }
+    .house{
+        border-radius: 1rem;
+    }
+    #ctime{
+        font-size: 1.5rem;
+    }
+    .square{
+        padding: 0;
+    }
 }
