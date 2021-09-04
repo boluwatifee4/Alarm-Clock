@@ -11,6 +11,7 @@ body{
     text-align: center;
 }
 .house{
+    border:5px solid #d69015;
     border-radius: 2rem;
     padding: 0 2rem;
     align-items: center;
@@ -79,11 +80,20 @@ select:focus{
     outline: none;
 }
 #tset, #treset{
+    border: 2px solid #f5aa42;
+    border-radius: 10px;
     font-size: 1.5rem;
     padding: .5rem .5rem;
     margin: .5rem .5rem;
-    background: #dde1e7;
     box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 288);
+}
+#treset:hover{
+    background: red;
+    color: white;
+}
+#tset{
+    background: green ;
+    color: white;
 }
 
 @media only screen and (max-width:1024px) and (min-width:320px){
